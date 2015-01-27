@@ -1,0 +1,23 @@
+{
+    "name": "bootstrap",
+    "author": "4D SAS",
+    "contributors": [
+        "Sébastien Lombard",
+        "Jonathan Argentiero"
+    ],
+    "copyright": "GNU GPL v3, AGPL v3, Commercial",
+    "license": "MIT",
+    "engines": {
+        "wakanda": ">=11"
+    },
+    "studio": {
+        "label": "Bootstrap",
+        "mobile": "false"
+    },
+    "keywords": ["wakanda", "theme"],
+    "version": "3.2.2",
+    "loadDependencies": [{
+        "id": "bootstrap/bootstrap.css",
+        "path": "THEMES_CUSTOM"
+    }]
+}
