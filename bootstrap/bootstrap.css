@@ -192,7 +192,8 @@
 }
 .waf-theme.bootstrap input[type="checkbox"],
 .waf-theme.bootstrap input[type="radio"] {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   padding: 0;
 }
 .waf-theme.bootstrap input[type="number"]::-webkit-inner-spin-button,
@@ -202,7 +203,6 @@
 .waf-theme.bootstrap input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 .waf-theme.bootstrap input[type="search"]::-webkit-search-cancel-button,
@@ -307,8 +307,8 @@
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('file:///Users/jargentiero/Documents/Wakanda/Extensions/ThemeBuilder/dist/styles/fonts/glyphicons-halflings-regular.eot');
-  src: url('file:///Users/jargentiero/Documents/Wakanda/Extensions/ThemeBuilder/dist/styles/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('file:///Users/jargentiero/Documents/Wakanda/Extensions/ThemeBuilder/dist/styles/fonts/glyphicons-halflings-regular.woff') format('woff'), url('file:///Users/jargentiero/Documents/Wakanda/Extensions/ThemeBuilder/dist/styles/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('file:///Users/jargentiero/Documents/Wakanda/Extensions/ThemeBuilder/dist/styles/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('./fonts/glyphicons-halflings-regular.eot');
+  src: url('./fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./fonts/glyphicons-halflings-regular.woff') format('woff'), url('./fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .waf-theme.bootstrap .glyphicon {
   position: relative;
@@ -923,13 +923,11 @@
   content: "\e200";
 }
 .waf-theme.bootstrap * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .waf-theme.bootstrap *:before,
 .waf-theme.bootstrap *:after {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -987,7 +985,6 @@
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -2350,7 +2347,6 @@ a.waf-theme.bootstrap .bg-danger:hover {
   font-weight: bold;
 }
 .waf-theme.bootstrap input[type="search"] {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2380,7 +2376,7 @@ a.waf-theme.bootstrap .bg-danger:hover {
 }
 .waf-theme.bootstrap output {
   display: block;
-  padding-top: 7px;
+  padding-top: 1;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
@@ -2388,8 +2384,8 @@ a.waf-theme.bootstrap .bg-danger:hover {
 .waf-theme.bootstrap .form-control {
   display: block;
   width: 100%;
-  height: 34px;
-  padding: 6px 12px;
+  height: 22px;
+  padding: 0 0;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
@@ -2397,16 +2393,13 @@ a.waf-theme.bootstrap .bg-danger:hover {
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .waf-theme.bootstrap .form-control:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .waf-theme.bootstrap .form-control::-moz-placeholder {
@@ -2436,22 +2429,22 @@ textarea.waf-theme.bootstrap .form-control {
 .waf-theme.bootstrap input[type="time"],
 .waf-theme.bootstrap input[type="datetime-local"],
 .waf-theme.bootstrap input[type="month"] {
-  line-height: 34px;
+  line-height: 22px;
   line-height: 1.42857143 \0;
 }
 .waf-theme.bootstrap input[type="date"].input-sm,
 .waf-theme.bootstrap input[type="time"].input-sm,
 .waf-theme.bootstrap input[type="datetime-local"].input-sm,
 .waf-theme.bootstrap input[type="month"].input-sm {
-  line-height: 30px;
+  line-height: 20px;
   line-height: 1.5 \0;
 }
 .waf-theme.bootstrap input[type="date"].input-lg,
 .waf-theme.bootstrap input[type="time"].input-lg,
 .waf-theme.bootstrap input[type="datetime-local"].input-lg,
 .waf-theme.bootstrap input[type="month"].input-lg {
-  line-height: 46px;
-  line-height: 1.3333333 \0;
+  line-height: 26px;
+  line-height: 1.33 \0;
 }
 .waf-theme.bootstrap _:-ms-fullscreen,
 .waf-theme.bootstrap :root input[type="date"],
@@ -2481,7 +2474,7 @@ textarea.waf-theme.bootstrap .form-control {
 .waf-theme.bootstrap :root input[type="datetime-local"].input-lg,
 .waf-theme.bootstrap _:-ms-fullscreen.input-lg,
 .waf-theme.bootstrap :root input[type="month"].input-lg {
-  line-height: 1.3333333;
+  line-height: 1.33;
 }
 .waf-theme.bootstrap .form-group {
   margin-bottom: 15px;
@@ -2548,8 +2541,8 @@ fieldset[disabled] .waf-theme.bootstrap .checkbox label {
   cursor: not-allowed;
 }
 .waf-theme.bootstrap .form-control-static {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 1;
+  padding-bottom: 1;
   margin-bottom: 0;
 }
 .waf-theme.bootstrap .form-control-static.input-lg,
@@ -2559,16 +2552,16 @@ fieldset[disabled] .waf-theme.bootstrap .checkbox label {
 }
 .waf-theme.bootstrap .input-sm,
 .waf-theme.bootstrap .form-group-sm .form-control {
-  height: 30px;
-  padding: 5px 10px;
+  height: 20px;
+  padding: 0 0;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 select.waf-theme.bootstrap .input-sm,
 select.waf-theme.bootstrap .form-group-sm .form-control {
-  height: 30px;
-  line-height: 30px;
+  height: 20px;
+  line-height: 20px;
 }
 textarea.waf-theme.bootstrap .input-sm,
 textarea.waf-theme.bootstrap .form-group-sm .form-control,
@@ -2578,16 +2571,16 @@ select[multiple].waf-theme.bootstrap .form-group-sm .form-control {
 }
 .waf-theme.bootstrap .input-lg,
 .waf-theme.bootstrap .form-group-lg .form-control {
-  height: 46px;
-  padding: 10px 16px;
+  height: 26px;
+  padding: 0 0;
   font-size: 18px;
-  line-height: 1.3333333;
+  line-height: 1.33;
   border-radius: 6px;
 }
 select.waf-theme.bootstrap .input-lg,
 select.waf-theme.bootstrap .form-group-lg .form-control {
-  height: 46px;
-  line-height: 46px;
+  height: 26px;
+  line-height: 26px;
 }
 textarea.waf-theme.bootstrap .input-lg,
 textarea.waf-theme.bootstrap .form-group-lg .form-control,
@@ -2599,7 +2592,7 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
   position: relative;
 }
 .waf-theme.bootstrap .has-feedback .form-control {
-  padding-right: 42.5px;
+  padding-right: 27.5px;
 }
 .waf-theme.bootstrap .form-control-feedback {
   position: absolute;
@@ -2607,21 +2600,21 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
   text-align: center;
   pointer-events: none;
 }
 .waf-theme.bootstrap .input-lg + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
 }
 .waf-theme.bootstrap .input-sm + .form-control-feedback {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
 }
 .waf-theme.bootstrap .has-success .help-block,
 .waf-theme.bootstrap .has-success .control-label,
@@ -2637,12 +2630,10 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
 }
 .waf-theme.bootstrap .has-success .form-control {
   border-color: #3c763d;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .waf-theme.bootstrap .has-success .form-control:focus {
   border-color: #2b542c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 .waf-theme.bootstrap .has-success .input-group-addon {
@@ -2667,12 +2658,10 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
 }
 .waf-theme.bootstrap .has-warning .form-control {
   border-color: #8a6d3b;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .waf-theme.bootstrap .has-warning .form-control:focus {
   border-color: #66512c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
 }
 .waf-theme.bootstrap .has-warning .input-group-addon {
@@ -2697,12 +2686,10 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
 }
 .waf-theme.bootstrap .has-error .form-control {
   border-color: #a94442;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .waf-theme.bootstrap .has-error .form-control:focus {
   border-color: #843534;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
 .waf-theme.bootstrap .has-error .input-group-addon {
@@ -2781,11 +2768,11 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
 .waf-theme.bootstrap .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 7px;
+  padding-top: 1;
 }
 .waf-theme.bootstrap .form-horizontal .radio,
 .waf-theme.bootstrap .form-horizontal .checkbox {
-  min-height: 27px;
+  min-height: 21px;
 }
 .waf-theme.bootstrap .form-horizontal .form-group {
   margin-left: -15px;
@@ -2795,7 +2782,7 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
   .waf-theme.bootstrap .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
-    padding-top: 7px;
+    padding-top: 1;
   }
 }
 .waf-theme.bootstrap .form-horizontal .has-feedback .form-control-feedback {
@@ -2803,12 +2790,12 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
 }
 @media (min-width: 768px) {
   .waf-theme.bootstrap .form-horizontal .form-group-lg .control-label {
-    padding-top: 14.333333px;
+    padding-top: 1;
   }
 }
 @media (min-width: 768px) {
   .waf-theme.bootstrap .form-horizontal .form-group-sm .control-label {
-    padding-top: 6px;
+    padding-top: 1;
   }
 }
 .waf-theme.bootstrap .btn {
@@ -2817,12 +2804,13 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 0 0;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -2851,7 +2839,6 @@ select[multiple].waf-theme.bootstrap .form-group-lg .form-control {
 .waf-theme.bootstrap .btn.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .waf-theme.bootstrap .btn.disabled,
@@ -2861,7 +2848,6 @@ fieldset[disabled] .waf-theme.bootstrap .btn {
   pointer-events: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .waf-theme.bootstrap .btn-default {
@@ -3145,7 +3131,6 @@ fieldset[disabled] .waf-theme.bootstrap .btn-danger.active {
 .waf-theme.bootstrap .btn-link[disabled],
 fieldset[disabled] .waf-theme.bootstrap .btn-link {
   background-color: transparent;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .waf-theme.bootstrap .btn-link,
@@ -3168,19 +3153,19 @@ fieldset[disabled] .waf-theme.bootstrap .btn-link:focus {
   text-decoration: none;
 }
 .waf-theme.bootstrap .btn-lg {
-  padding: 10px 16px;
+  padding: 0 0;
   font-size: 18px;
-  line-height: 1.3333333;
+  line-height: 1.33;
   border-radius: 6px;
 }
 .waf-theme.bootstrap .btn-sm {
-  padding: 5px 10px;
+  padding: 0 0;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 .waf-theme.bootstrap .btn-xs {
-  padding: 1px 5px;
+  padding: 0 0;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
@@ -3200,7 +3185,6 @@ fieldset[disabled] .waf-theme.bootstrap .btn-link:focus {
 .waf-theme.bootstrap .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
 .waf-theme.bootstrap .fade.in {
@@ -3264,7 +3248,6 @@ tbody.waf-theme.bootstrap .collapse.in {
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
@@ -3456,11 +3439,9 @@ tbody.waf-theme.bootstrap .collapse.in {
   padding-right: 12px;
 }
 .waf-theme.bootstrap .btn-group.open .dropdown-toggle {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .waf-theme.bootstrap .btn-group.open .dropdown-toggle.btn-link {
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .waf-theme.bootstrap .btn .caret {
@@ -3562,17 +3543,17 @@ tbody.waf-theme.bootstrap .collapse.in {
 .waf-theme.bootstrap .input-group-lg > .form-control,
 .waf-theme.bootstrap .input-group-lg > .input-group-addon,
 .waf-theme.bootstrap .input-group-lg > .input-group-btn > .btn {
-  height: 46px;
-  padding: 10px 16px;
+  height: 26px;
+  padding: 0 0;
   font-size: 18px;
-  line-height: 1.3333333;
+  line-height: 1.33;
   border-radius: 6px;
 }
 select.waf-theme.bootstrap .input-group-lg > .form-control,
 select.waf-theme.bootstrap .input-group-lg > .input-group-addon,
 select.waf-theme.bootstrap .input-group-lg > .input-group-btn > .btn {
-  height: 46px;
-  line-height: 46px;
+  height: 26px;
+  line-height: 26px;
 }
 textarea.waf-theme.bootstrap .input-group-lg > .form-control,
 textarea.waf-theme.bootstrap .input-group-lg > .input-group-addon,
@@ -3585,8 +3566,8 @@ select[multiple].waf-theme.bootstrap .input-group-lg > .input-group-btn > .btn {
 .waf-theme.bootstrap .input-group-sm > .form-control,
 .waf-theme.bootstrap .input-group-sm > .input-group-addon,
 .waf-theme.bootstrap .input-group-sm > .input-group-btn > .btn {
-  height: 30px;
-  padding: 5px 10px;
+  height: 20px;
+  padding: 0 0;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
@@ -3594,8 +3575,8 @@ select[multiple].waf-theme.bootstrap .input-group-lg > .input-group-btn > .btn {
 select.waf-theme.bootstrap .input-group-sm > .form-control,
 select.waf-theme.bootstrap .input-group-sm > .input-group-addon,
 select.waf-theme.bootstrap .input-group-sm > .input-group-btn > .btn {
-  height: 30px;
-  line-height: 30px;
+  height: 20px;
+  line-height: 20px;
 }
 textarea.waf-theme.bootstrap .input-group-sm > .form-control,
 textarea.waf-theme.bootstrap .input-group-sm > .input-group-addon,
@@ -3622,7 +3603,7 @@ select[multiple].waf-theme.bootstrap .input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .waf-theme.bootstrap .input-group-addon {
-  padding: 6px 12px;
+  padding: 0 0;
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
@@ -3633,12 +3614,12 @@ select[multiple].waf-theme.bootstrap .input-group-sm > .input-group-btn > .btn {
   border-radius: 4px;
 }
 .waf-theme.bootstrap .input-group-addon.input-sm {
-  padding: 5px 10px;
+  padding: 0 0;
   font-size: 12px;
   border-radius: 3px;
 }
 .waf-theme.bootstrap .input-group-addon.input-lg {
-  padding: 10px 16px;
+  padding: 0 0;
   font-size: 18px;
   border-radius: 6px;
 }
@@ -4095,10 +4076,9 @@ select[multiple].waf-theme.bootstrap .input-group-sm > .input-group-btn > .btn {
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 @media (min-width: 768px) {
   .waf-theme.bootstrap .navbar-form .form-group {
@@ -4166,7 +4146,6 @@ select[multiple].waf-theme.bootstrap .input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -4180,12 +4159,12 @@ select[multiple].waf-theme.bootstrap .input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .waf-theme.bootstrap .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 .waf-theme.bootstrap .navbar-btn.btn-sm {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .waf-theme.bootstrap .navbar-btn.btn-xs {
   margin-top: 14px;
@@ -4443,7 +4422,7 @@ fieldset[disabled] .waf-theme.bootstrap .navbar-inverse .btn-link:focus {
 .waf-theme.bootstrap .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
+  padding: 0 0;
   line-height: 1.42857143;
   text-decoration: none;
   color: #337ab7;
@@ -4495,7 +4474,7 @@ fieldset[disabled] .waf-theme.bootstrap .navbar-inverse .btn-link:focus {
 }
 .waf-theme.bootstrap .pagination-lg > li > a,
 .waf-theme.bootstrap .pagination-lg > li > span {
-  padding: 10px 16px;
+  padding: 0 0;
   font-size: 18px;
 }
 .waf-theme.bootstrap .pagination-lg > li:first-child > a,
@@ -4510,7 +4489,7 @@ fieldset[disabled] .waf-theme.bootstrap .navbar-inverse .btn-link:focus {
 }
 .waf-theme.bootstrap .pagination-sm > li > a,
 .waf-theme.bootstrap .pagination-sm > li > span {
-  padding: 5px 10px;
+  padding: 0 0;
   font-size: 12px;
 }
 .waf-theme.bootstrap .pagination-sm > li:first-child > a,
@@ -4714,7 +4693,6 @@ a.list-group-item.active > .waf-theme.bootstrap .badge,
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
 .waf-theme.bootstrap .thumbnail > img,
@@ -4828,7 +4806,6 @@ a.waf-theme.bootstrap .thumbnail.active {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .waf-theme.bootstrap .progress-bar {
@@ -4840,23 +4817,19 @@ a.waf-theme.bootstrap .thumbnail.active {
   color: #ffffff;
   text-align: center;
   background-color: #337ab7;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 .waf-theme.bootstrap .progress-striped .progress-bar,
 .waf-theme.bootstrap .progress-bar-striped {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 40px 40px;
 }
 .waf-theme.bootstrap .progress.active .progress-bar,
 .waf-theme.bootstrap .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
-  -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
 .waf-theme.bootstrap .progress-bar-success {
@@ -4864,7 +4837,6 @@ a.waf-theme.bootstrap .thumbnail.active {
 }
 .progress-striped .waf-theme.bootstrap .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .waf-theme.bootstrap .progress-bar-info {
@@ -4872,7 +4844,6 @@ a.waf-theme.bootstrap .thumbnail.active {
 }
 .progress-striped .waf-theme.bootstrap .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .waf-theme.bootstrap .progress-bar-warning {
@@ -4880,7 +4851,6 @@ a.waf-theme.bootstrap .thumbnail.active {
 }
 .progress-striped .waf-theme.bootstrap .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .waf-theme.bootstrap .progress-bar-danger {
@@ -4888,7 +4858,6 @@ a.waf-theme.bootstrap .thumbnail.active {
 }
 .progress-striped .waf-theme.bootstrap .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .waf-theme.bootstrap .media {
@@ -5106,7 +5075,6 @@ a.waf-theme.bootstrap .list-group-item-danger.active:focus {
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .waf-theme.bootstrap .panel-body {
@@ -5443,7 +5411,6 @@ a.waf-theme.bootstrap .list-group-item-danger.active:focus {
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .waf-theme.bootstrap .well blockquote {
@@ -5501,17 +5468,13 @@ button.waf-theme.bootstrap .close {
 .waf-theme.bootstrap .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 .waf-theme.bootstrap .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 .waf-theme.bootstrap .modal-open .modal {
@@ -5529,7 +5492,6 @@ button.waf-theme.bootstrap .close {
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0;
@@ -5594,7 +5556,6 @@ button.waf-theme.bootstrap .close {
     margin: 30px auto;
   }
   .waf-theme.bootstrap .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
   .waf-theme.bootstrap .modal-sm {
@@ -5721,7 +5682,6 @@ button.waf-theme.bootstrap .close {
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   white-space: normal;
 }
@@ -5836,7 +5796,6 @@ button.waf-theme.bootstrap .close {
   display: none;
   position: relative;
   -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
 .waf-theme.bootstrap .carousel-inner > .item > img,
@@ -5845,24 +5804,30 @@ button.waf-theme.bootstrap .close {
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
   .waf-theme.bootstrap .carousel-inner > .item {
-    transition: transform 0.6s ease-in-out;
-    backface-visibility: hidden;
-    perspective: 1000;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+            transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
   }
   .waf-theme.bootstrap .carousel-inner > .item.next,
   .waf-theme.bootstrap .carousel-inner > .item.active.right {
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
     left: 0;
   }
   .waf-theme.bootstrap .carousel-inner > .item.prev,
   .waf-theme.bootstrap .carousel-inner > .item.active.left {
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
     left: 0;
   }
   .waf-theme.bootstrap .carousel-inner > .item.next.left,
   .waf-theme.bootstrap .carousel-inner > .item.prev.right,
   .waf-theme.bootstrap .carousel-inner > .item.active {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     left: 0;
   }
 }
@@ -5911,7 +5876,6 @@ button.waf-theme.bootstrap .close {
 }
 .waf-theme.bootstrap .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
@@ -5920,7 +5884,6 @@ button.waf-theme.bootstrap .close {
   left: auto;
   right: 0;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
@@ -6208,7 +6171,6 @@ button.waf-theme.bootstrap .close {
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #dddddd;
 }
@@ -6395,12 +6357,13 @@ button.waf-theme.bootstrap .close {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 0 0;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -6432,7 +6395,6 @@ button.waf-theme.bootstrap .close {
 .waf-theme.bootstrap .waf-button.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .waf-theme.bootstrap .waf-button.disabled,
@@ -6442,7 +6404,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-button {
   pointer-events: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .waf-theme.bootstrap .waf-button:hover,
@@ -6536,12 +6497,13 @@ fieldset[disabled] .waf-theme.bootstrap .waf-button.waf-role-success.active {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 0 0;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -6573,7 +6535,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-button.waf-role-success.active {
 .waf-theme.bootstrap .waf-buttonImage.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .waf-theme.bootstrap .waf-buttonImage.disabled,
@@ -6583,7 +6544,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-buttonImage {
   pointer-events: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .waf-theme.bootstrap .waf-buttonImage:hover,
@@ -6631,7 +6591,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-buttonImage.active {
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #dddddd;
 }
@@ -6820,7 +6779,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-buttonImage.active {
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #dddddd;
   border-radius: 10rem;
@@ -7007,7 +6965,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-buttonImage.active {
 }
 .waf-theme.bootstrap .waf-combobox {
   border: 1px solid #cccccc;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   border-radius: 4px;
 }
@@ -7018,13 +6975,11 @@ fieldset[disabled] .waf-theme.bootstrap .waf-buttonImage.active {
   background-color: #ffffff;
   background-image: none;
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .waf-theme.bootstrap .waf-combobox input:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .waf-theme.bootstrap .waf-combobox input::-moz-placeholder {
@@ -7054,12 +7009,13 @@ textarea.waf-theme.bootstrap .waf-combobox input {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 0 0;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -7096,7 +7052,6 @@ textarea.waf-theme.bootstrap .waf-combobox input {
 .waf-theme.bootstrap .waf-combobox button.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .waf-theme.bootstrap .waf-combobox button.disabled,
@@ -7106,7 +7061,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-combobox button {
   pointer-events: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .waf-theme.bootstrap .waf-combobox button:hover,
@@ -7155,7 +7109,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-combobox button.active {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   height: 100%;
 }
@@ -7168,10 +7121,8 @@ fieldset[disabled] .waf-theme.bootstrap .waf-combobox button.active {
   color: #ffffff;
   text-align: center;
   background-color: #337ab7;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 .waf-theme.bootstrap .waf-slider .ui-slider-handle {
@@ -7180,12 +7131,13 @@ fieldset[disabled] .waf-theme.bootstrap .waf-combobox button.active {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 0 0;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -7217,7 +7169,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-combobox button.active {
 .waf-theme.bootstrap .waf-slider .ui-slider-handle.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .waf-theme.bootstrap .waf-slider .ui-slider-handle.disabled,
@@ -7227,7 +7178,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-slider .ui-slider-handle {
   pointer-events: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .waf-theme.bootstrap .waf-slider .ui-slider-handle:hover,
@@ -7273,8 +7223,8 @@ fieldset[disabled] .waf-theme.bootstrap .waf-slider .ui-slider-handle.active {
 .waf-theme.bootstrap .waf-textField {
   display: block;
   width: 100%;
-  height: 34px;
-  padding: 6px 12px;
+  height: 22px;
+  padding: 0 0;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
@@ -7282,17 +7232,14 @@ fieldset[disabled] .waf-theme.bootstrap .waf-slider .ui-slider-handle.active {
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   height: 100%;
 }
 .waf-theme.bootstrap .waf-textField:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .waf-theme.bootstrap .waf-textField::-moz-placeholder {
@@ -7321,7 +7268,6 @@ textarea.waf-theme.bootstrap .waf-textField {
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 4px !important;
   background-color: transparent;
@@ -7526,7 +7472,6 @@ textarea.waf-theme.bootstrap .waf-textField {
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 0;
 }
@@ -7662,7 +7607,6 @@ textarea.waf-theme.bootstrap .waf-textField {
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 0 !important;
   padding: 0;
@@ -7922,7 +7866,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-menuBar .btn-link:focus {
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
   min-height: 1rem;
@@ -7971,7 +7914,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-menuBar .btn-link:focus {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   height: 100%;
   min-height: 20px !important;
@@ -7985,10 +7927,8 @@ fieldset[disabled] .waf-theme.bootstrap .waf-menuBar .btn-link:focus {
   color: #ffffff;
   text-align: center;
   background-color: #337ab7;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 .waf-theme.bootstrap .waf-calendar {
@@ -7996,7 +7936,6 @@ fieldset[disabled] .waf-theme.bootstrap .waf-menuBar .btn-link:focus {
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #dddddd;
 }
